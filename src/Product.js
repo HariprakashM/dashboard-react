@@ -35,7 +35,7 @@ export default function Products() {
 
 
       </div>
-      {loading ? <h1>loadingggg</h1>: <div className='row'>
+      {loading ? <h1>loading......!!!!</h1>: <div className='row'>
 
         {
           product.map((e) => <Items data={e} deleteproduct={deleteproduct}></Items>)

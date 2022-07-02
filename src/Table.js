@@ -36,7 +36,7 @@ export default function Table() {
                     class="fas fa-download fa-sm text-white-50"></i> create user</Link>
             </div>
 {
-    loading?<h1>loadinggg</h1>:
+    loading?<h1>loading.....!!!!!</h1>:
 
 
             <div class="card shadow mb-4">
