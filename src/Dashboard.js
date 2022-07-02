@@ -13,7 +13,7 @@ export default function Dashborad() {
         },
         {
             name:"EARNINGS (ANNUAL)",
-            price:"$215,000",
+            price:"$218,000",
             color:"success",
             icon:"dollar-sign",
             bar:""
