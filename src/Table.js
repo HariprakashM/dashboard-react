@@ -1,18 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import Lottie from 'react-lottie';
-import animationData from "./lotties/9844-loading-40-paperplane.json";
+
 export default function Table() {
     const [user,setuser]=useState([])
     const [loading,setloading]=useState(false)
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }}
+  
     useEffect(()=>{
        
         fetchdata()
@@ -43,11 +36,7 @@ export default function Table() {
                     class="fas fa-download fa-sm text-white-50"></i> create user</Link>
             </div>
 {
-    loading?<Lottie 
-    options={defaultOptions}
-    height={400}
-    width={400}
-  />:
+    loading?<h1>loadinggg</h1>:
 
 
             <div class="card shadow mb-4">

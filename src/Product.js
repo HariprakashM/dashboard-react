@@ -3,8 +3,7 @@ import Items from './Items'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import Lottie from 'react-lottie';
-import animationData from "./lotties/97930-loading.json";
+
 export default function Products() {
   const [loading, setloading] = useState(false)
   const [product, setproduct] = useState([])
@@ -25,13 +24,7 @@ export default function Products() {
     setloading(false)
     setproduct(a.data);
   }
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }}
+  
   return (
     <div className='container'>
       <div className='row'>
@@ -42,10 +35,7 @@ export default function Products() {
 
 
       </div>
-      {loading ? <Lottie
-        options={defaultOptions}
-        height={400}
-        width={400} />: <div className='row'>
+      {loading ? <h1>loadingggg</h1>: <div className='row'>
 
         {
           product.map((e) => <Items data={e} deleteproduct={deleteproduct}></Items>)
